@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install Dependencies
-        run: pip install hypothesis==6.151.0 pure_eval==0.2.3 pydantic_core==2.41.5 torch==2.10.0+cpu uv==0.9.26
+      # - name: Install Dependencies
+      #   run: pip install hypothesis==6.151.0 pure_eval==0.2.3 pydantic_core==2.41.5 torch==2.10.0+cpu uv==0.9.26
       - run: |
           python -m pip install --upgrade pip
       - run: |
